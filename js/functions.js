@@ -21,3 +21,15 @@ function cellClick (cell)
         counter--;
     }
 }
+
+function cambiarColor (r, c)
+    {
+        var cell = document.getElementById("Tablero");
+        var r1 = r, c1 = c, r2 = r, c2 = c;
+        var r3 = r, c3 = c, r4 = r, c4 = c;
+
+        for (let i = 0; i < 8; i++)
+        {
+            cell.rows[r].cells[i].style.backgroundColor = "lightblue";
+            cell.rows[i].cells[c].style.backgroundColor = "lightblue";
+        }
