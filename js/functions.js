@@ -16,5 +16,8 @@ function cellClick (cell)
             }else{
                 alert("Las 8 reinas ya han sido colocadas");
             }
+    }else{
+        cell.style = "background-image: none;";
+        counter--;
     }
 }
